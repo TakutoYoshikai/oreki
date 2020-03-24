@@ -1,1 +1,1 @@
-# oreki
+# oreki (Original Endpoint Sales Kit)
