@@ -9,3 +9,4 @@ original endpoint sales kit
 ## Quick Start
 
 ## License
+MIT License
