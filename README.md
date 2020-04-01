@@ -13,6 +13,7 @@ cd /path/to/oreki
 cd install-script
 ./install-yum.sh
 ./install-golang.sh
+#set up GOPATH and golang etc
 ./install-glide.sh
 ./install-lnd.sh
 ./install-btcd.sh
