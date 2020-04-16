@@ -37,7 +37,7 @@ oreki.init().then(function(success) {
 add payment event
 ```
 oreki.on("paid", function(payment) {
-  //increment api point from payment.point and payment.user_id
+  //increment api point from payment.point and payment.user_id and payment.endpoint_id
 })
 ```
 start
@@ -46,7 +46,7 @@ oreki.start()
 ```
 register payment
 ```
-oreki.addPayment(<user_id>, <endpoint_id>, <point>, <bitcoin amount>).then(function(payment) {
+oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoin amount: int>).then(function(payment) {
   //payment.address: bitcoin address
 })
 //oreki.addPayment("user_id", "endpoint_id", 100, 1000)
