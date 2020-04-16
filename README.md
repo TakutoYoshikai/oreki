@@ -20,6 +20,10 @@ cd install-script
 ```
 
 ## Quick Start
+download rpc.proto
+```
+curl -o rpc.proto -s https://raw.githubusercontent.com/lightningnetwork/lnd/master/lnrpc/rpc.proto 
+```
 import
 ```
 const Oreki = require("oreki-node").Oreki
