@@ -20,7 +20,7 @@ app.listen(3000, function() {
 (async() => {
   const initialized = await oreki.init()
   if (!initialized) {
-    console.error("couldn't initialized")
+    console.error("couldn't initialize")
     return
   }
   oreki.on("paid", function(payment) {
