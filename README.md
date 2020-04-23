@@ -16,7 +16,9 @@ cd install-script
 #set up GOPATH and golang etc
 ./install-glide.sh
 ./install-lnd.sh
-./install-btcd.sh
+#install btcd or bitcoind
+#./install-btcd.sh
+#./install-bitcoind.sh
 ```
 
 ## Quick Start
