@@ -26,11 +26,11 @@ download rpc.proto
 ```
 curl -o rpc.proto -s https://raw.githubusercontent.com/lightningnetwork/lnd/master/lnrpc/rpc.proto 
 ```
-import
+### import
 ```
 const Oreki = require("oreki-node").Oreki
 ```
-initialize
+### initialize
 ```
 const oreki = new Oreki("config file path")
 oreki.init().then(function(success) {
@@ -40,17 +40,17 @@ oreki.init().then(function(success) {
 })
 ```
 
-add payment event
+### add payment event
 ```
 oreki.on("paid", function(payment) {
   //increment api point from payment.point and payment.user_id and payment.endpoint_id
 })
 ```
-start
+### start
 ```
 oreki.start()
 ```
-register payment
+### register payment
 ```
 oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoin amount: int>).then(function(payment) {
   //payment.address: bitcoin address
