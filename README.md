@@ -58,6 +58,19 @@ oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoi
 //oreki.addPayment("user_id", "endpoint_id", 100, 1000)
 
 ```
+## How to test
+1. Create 2 processes of lnd(as Alice and Bob)
+2. Set password "HelloWorld" to Alice and Bob
+3. Get coins with 2 accounts by testnet faucet more than 10000
+4. Run "npm test"
+
+## Contribution
+1. Fork oreki-node
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Implement it and check it runs(npm test)
+4. Commit your changes (git commit -am 'Add some feature')
+5. Push to the branch (git push origin my-new-feature)
+6. Create new Pull Request
 
 ## License
 MIT License
