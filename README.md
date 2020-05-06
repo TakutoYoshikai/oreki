@@ -20,12 +20,24 @@ cd install-script
 #./install-btcd.sh
 #./install-bitcoind.sh
 ```
-
-## Quick Start
-download rpc.proto
+# Quick Start
+1. download rpc.proto
 ```
 curl -o rpc.proto -s https://raw.githubusercontent.com/lightningnetwork/lnd/master/lnrpc/rpc.proto 
 ```
+2. make config.json from example
+
+3. import oreki module
+
+4. initialize oreki object and call init function
+
+5. set event handler that notices payment
+
+6. register payment reservation
+
+7. call start function to check transactions
+
+## Documentation
 ### import
 ```
 const Oreki = require("oreki-node").Oreki
@@ -50,7 +62,7 @@ oreki.on("paid", function(payment) {
 ```
 oreki.start()
 ```
-### register payment
+### register payment reservation
 ```
 oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoin amount: int>).then(function(payment) {
   //payment.address: bitcoin address
