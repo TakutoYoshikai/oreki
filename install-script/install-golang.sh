@@ -12,7 +12,7 @@ mkdir go
 echo "export GOPATH=$HOME/go"
 echo "export PATH=\$PATH:/usr/local/go/bin:$GOPATH/bin"
 echo "export GOROOT=/usr/local/go"
-read -p "I register those GOROOT and GOPATH and golang binary directory on your .bash_profile. ok? (y/N): " yn
+read -p "I register those GOROOT and GOPATH and golang binary directory in your .bash_profile. ok? (y/N): " yn
 case "$yn" in [yY]*) ;; *) echo "finished." ; exit ;; esac
 echo "export GOPATH=$HOME/go" >> $HOME/.bash_profile
 echo "export PATH=\$PATH:/usr/local/go/bin:$GOPATH/bin" >> $HOME/.bash_profile
