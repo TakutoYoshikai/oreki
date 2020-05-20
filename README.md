@@ -99,10 +99,8 @@ nohup ./run-lnd.sh &
 ```
 
 ### prepare to use oreki
-1. download rpc.proto
-```
-curl -o rpc.proto -s https://raw.githubusercontent.com/lightningnetwork/lnd/master/lnrpc/rpc.proto 
-```
+1. copy rpc.proto from this repository to your project
+
 2. make config.json from example
 
 3. import oreki module
