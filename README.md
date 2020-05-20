@@ -22,9 +22,44 @@ cd install-script
 ```
 # Quick Start
 activate bitcoind or btcd and run it
+### set up bitcoind or btcd
+#### bitcoind
+1. create bitcoin directory and config file
+```
+mkdir bitcoin
+cd bitcoin
+vim bitcoin.conf
+```
+
+this is an example of bitcoin.conf on mainnet
+```
+rest=1
+server=1
+txindex=1
+rpcuser=alice
+rpcpassword=alicepassword
+zmqpubrawblock=tcp://127.0.0.1:28332
+zmqpubrawtx=tcp://127.0.0.1:28333
+```
+this is an example of bitcoin.conf on testnet
+```
+testnet=3
+rest=1
+server=1
+txindex=1
+rpcuser=alice
+rpcpassword=alicepassword
+zmqpubrawblock=tcp://127.0.0.1:28332
+zmqpubrawtx=tcp://127.0.0.1:28333
+```
+
+2. run bitcoind
+```
+bitcoind -datadir=/path/to/bitcoin -daemon
+```
 
 ### set up lnd, and run it
-1. create lnd directory, and config file
+1. create lnd directory
 ```
 mkdir lnd
 cd lnd
