@@ -10,5 +10,5 @@
     "macaroon": "/path/to/lnd/admin.macaroon",
     "password": "HelloWorld"
   },
-  "password": "password of oreki server"
+  "password": "password of oreki server(optional)"
 }
