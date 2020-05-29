@@ -16,9 +16,11 @@ cd install-script
 #set up GOPATH and golang etc
 ./install-glide.sh
 ./install-lnd.sh
-#install btcd or bitcoind
+#install btcd or bitcoind(optional)
 #./install-btcd.sh
 #./install-bitcoind.sh
+#install geth for using ethereum(optional)
+#./install-geth.sh
 ```
 # Quick Start
 activate bitcoind or btcd and run it
