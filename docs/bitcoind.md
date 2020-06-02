@@ -28,3 +28,13 @@ rpcpassword=alicepassword <- Change HERE
 zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
 ```
+
+## Run bitcoind
+```
+bitcoind -datadir=/path/to/bitcoin
+```
+
+## Run bitcoind as a daemon process
+```
+bitcoind -datadir=/path/to/bitcoin -daemon
+```
