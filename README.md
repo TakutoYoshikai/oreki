@@ -37,29 +37,10 @@ cd install-script
 # Quick Start
 
 ### set up lnd, and run it
-1. create lnd directory
-```
-mkdir lnd
-cd lnd
-mkdir data
-mkdir logs
-```
-
-2. create a shell script for running lnd
-```
-vim run-lnd.sh
-chmod +x run-lnd.sh
-```
-
 
 this is an example of run-lnd.sh on mainnet with btcd
 ```
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.testnet
-```
-
-this is an example of run-lnd.sh on mainnet in neutrino mode
-```
-lnd --bitcoin.active --bitcoin.mainnet --debuglevel=debug --bitcoin.node=neutrino --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data
 ```
 
 this is an example of run-lnd.sh on testnet with btcd
@@ -67,15 +48,6 @@ this is an example of run-lnd.sh on testnet with btcd
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=btcd --bitcoin.active --btcd.rpcuser=alice --btcd.rpcpass=alicepassword --bitcoin.testnet
 ```
 
-this is an example of run-lnd.sh on testnet in neutrino mode
-```
-lnd --bitcoin.active --bitcoin.testnet --debuglevel=debug --bitcoin.node=neutrino --neutrino.connect=faucet.lightning.community --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data
-```
-
-3. run run-lnd.sh using nohup
-```
-nohup ./run-lnd.sh &
-```
 
 ### prepare to use oreki
 1. copy rpc.proto from this repository to your project
