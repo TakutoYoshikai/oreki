@@ -51,3 +51,8 @@ nohup ./run-lnd.sh &
 ```
 mylncli stop
 ```
+
+### Create your Lightning Network Wallet
+```
+mylncli create
+```
