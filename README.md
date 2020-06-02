@@ -49,11 +49,7 @@ mkdir logs
 vim run-lnd.sh
 chmod +x run-lnd.sh
 ```
-this is an example of run-lnd.sh on mainnet with bitcoind
 
-```
-lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.mainnet
-```
 
 this is an example of run-lnd.sh on mainnet with btcd
 ```
@@ -63,11 +59,6 @@ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:
 this is an example of run-lnd.sh on mainnet in neutrino mode
 ```
 lnd --bitcoin.active --bitcoin.mainnet --debuglevel=debug --bitcoin.node=neutrino --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data
-```
-
-this is an example of run-lnd.sh on testnet with bitcoind
-```
-lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.testnet --bitcoin.active
 ```
 
 this is an example of run-lnd.sh on testnet with btcd
