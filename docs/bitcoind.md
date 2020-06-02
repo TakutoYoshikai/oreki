@@ -68,6 +68,18 @@ this is an example of run-lnd.sh on mainnet(for production)
 ```
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.mainnet
 ```
+
+3. register alias of lncli in .bash_profile
+
+* for test
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/testnet/admin.macaroon"
+```
+
+* for production
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/mainnet/admin.macaroon"
+```
 ## Run LND
 ```
 ./run-lnd.sh
@@ -77,8 +89,13 @@ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:
 ```
 nohup ./run-lnd.sh &
 ```
-
 ### Stop LND process in background
 ```
-lncli stop
+mylncli stop
 ```
+
+### Create your Lightning Network Wallet
+```
+mylncli create
+```
+
