@@ -7,7 +7,9 @@ OS: Amazon Linux2
 Storage: about 500GB
 
 ## To check
-### 1. btcd or bitcoind or neutrino
+### 1. bitcoin or ethereum
+
+### 2. btcd or bitcoind or neutrino(case of bitcoin)
 If you want to build bitcoin fullnode, use **btcd**.
 
 If you want to save storage, use **bitcoind**.
