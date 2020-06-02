@@ -6,6 +6,15 @@ original endpoint sales kit
 OS: Amazon Linux2
 Storage: about 500GB
 
+## To check
+### 1. btcd or bitcoind or neutrino
+If you want to build bitcoin fullnode, use **btcd**.
+
+If you want to save storage, use **bitcoind**.
+
+If you don't want to build bitcoin node, use **neutrino mode** of lnd.
+
+
 ## Installation
 ```
 cd /path/to/oreki
