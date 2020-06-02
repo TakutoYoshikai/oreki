@@ -8,7 +8,7 @@ Storage: about 500GB
 
 ## To check
 ### 1. bitcoin or ethereum
-If you want to use, read [here](https://github.com/gaiax/oreki/blob/master/docs/ethereum.md)
+If you want to use ethereum, read [here](https://github.com/gaiax/oreki/blob/master/docs/ethereum.md)
 ### 2. btcd or bitcoind or neutrino(case of bitcoin)
 If you want to build bitcoin fullnode, use **btcd**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/btcd.md).
 
