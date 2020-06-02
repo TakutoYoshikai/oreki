@@ -8,13 +8,13 @@ Storage: about 500GB
 
 ## To check
 ### 1. bitcoin or ethereum
-
+If you want to use, read [here](https://github.com/gaiax/oreki/blob/master/docs/ethereum.md)
 ### 2. btcd or bitcoind or neutrino(case of bitcoin)
-If you want to build bitcoin fullnode, use **btcd**.
+If you want to build bitcoin fullnode, use **btcd**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/btcd.md).
 
-If you want to save storage, use **bitcoind**.
+If you want to save storage, use **bitcoind**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/bitcoind.md).
 
-If you don't want to build bitcoin node, use **neutrino mode** of lnd.
+If you don't want to build bitcoin node, use **neutrino mode of lnd**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/neutrino.md).
 
 
 ## Installation
