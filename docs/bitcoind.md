@@ -39,6 +39,10 @@ bitcoind -datadir=/path/to/bitcoin
 bitcoind -datadir=/path/to/bitcoin -daemon
 ```
 
+## Stop bitcoind
+```
+bitcoin-cli stop
+```
 ## Setup LND
 1. create lnd directory
 ```
@@ -63,4 +67,18 @@ this is an example of run-lnd.sh on mainnet(for production)
 
 ```
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.mainnet
+```
+## Run LND
+```
+./run-lnd.sh
+```
+
+## Run LND in background
+```
+nohup ./run-lnd.sh &
+```
+
+### Stop LND process in background
+```
+lncli stop
 ```
