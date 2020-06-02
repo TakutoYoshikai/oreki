@@ -25,6 +25,18 @@ this is an example of run-lnd.sh on mainnet in neutrino mode(for production)
 lnd --bitcoin.active --bitcoin.mainnet --debuglevel=debug --bitcoin.node=neutrino --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data
 ```
 
+3. register alias of lncli in .bash_profile
+
+* for test
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/testnet/admin.macaroon"
+```
+
+* for production
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/mainnet/admin.macaroon"
+```
+
 ## Run LND
 ```
 ./run-lnd.sh
@@ -37,5 +49,5 @@ nohup ./run-lnd.sh &
 
 ### Stop LND process in background
 ```
-lncli stop
+mylncli stop
 ```
