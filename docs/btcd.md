@@ -13,7 +13,7 @@ chmod +x start-btcd.sh
 
 this is an example of start-btcd.sh on testnet(for test)
 ```
-btcd --testnet --txindex --rpcuser=alice --rpcpass=alice01 --datadir=/mnt/storage/btcd-data/data
+btcd --testnet --txindex --rpcuser=alice --rpcpass=alice01 --datadir=/path/to/btcd/data
 ```
 
 ## Start btcd
