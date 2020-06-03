@@ -45,7 +45,7 @@ This solution is to trust other server. It's easy, but you don't get real benefi
 npm install oreki-node
 ```
 
-1. copy rpc.proto from this repository to your project
+1. copy [rpc.proto](https://github.com/gaiax/oreki/blob/master/rpc.proto) from this repository to your project
 
 2. make config.json from example
 
