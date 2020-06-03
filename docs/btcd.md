@@ -18,7 +18,7 @@ btcd --testnet --txindex --rpcuser=alice --rpcpass=alice01 --datadir=/mnt/storag
 
 ## Start btcd
 First start of btcd have to wait sync of blockchain.
-You can know blockchain sync finished by checking log and comparing [latest block height](https://live.blockcypher.com/btc/)
+You can know blockchain sync finished by checking log and comparing to [latest block height](https://live.blockcypher.com/btc/)
 ```
 ./start-btcd.sh
 ```
