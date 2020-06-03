@@ -40,24 +40,24 @@ This solution is to trust other server. It's easy, but you don't get real benefi
 # Quick Start
 
 ### prepare to use oreki
-1. install oreki-node to your project
+**1. install oreki-node to your project**
 ```
 npm install oreki-node
 ```
 
-1. copy [rpc.proto](https://github.com/gaiax/oreki/blob/master/rpc.proto) from this repository to your project
+**2. copy [rpc.proto](https://github.com/gaiax/oreki/blob/master/rpc.proto) from this repository to your project**
 
-2. make "config.json" from [example(bitcoin)](https://github.com/gaiax/oreki/blob/master/example/config.json) or [example(ethereum)](https://github.com/gaiax/oreki/blob/master/example/ethereum-config.json)
+**3. make "config.json" from [example(bitcoin)](https://github.com/gaiax/oreki/blob/master/example/config.json) or [example(ethereum)](https://github.com/gaiax/oreki/blob/master/example/ethereum-config.json)**
 
-3. import oreki module
+**4. import oreki module**
 
-4. initialize oreki object and call init function
+**5. initialize oreki object and call init function**
 
-5. set event handler that notices payment
+**6. set event handler that notices payment**
 
-6. register payment reservation
+**7. register payment reservation**
 
-7. call start function to check transactions
+**8. call start function to check transactions**
 
 ## Documentation
 ### import
