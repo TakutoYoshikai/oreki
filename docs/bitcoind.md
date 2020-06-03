@@ -31,7 +31,7 @@ zmqpubrawtx=tcp://127.0.0.1:28333
 
 ## Start bitcoind
 First start of bitcoind have to wait sync of blockchain.
-You can know blockchain sync finished by checking log and comparing [latest block height](https://live.blockcypher.com/btc/)
+You can know blockchain sync finished by checking log and comparing to [latest block height](https://live.blockcypher.com/btc/)
 ```
 bitcoind -datadir=/path/to/bitcoin
 ```
