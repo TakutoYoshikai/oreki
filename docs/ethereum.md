@@ -14,5 +14,5 @@ chmod +x start-geth.sh
 this is an example of start-geth.sh on testnet (for test)
 ```
 #!/bin/bash
-eth --testnet --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock
+geth --testnet --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock
 ```
