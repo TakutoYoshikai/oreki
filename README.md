@@ -47,7 +47,7 @@ npm install oreki-node
 
 1. copy [rpc.proto](https://github.com/gaiax/oreki/blob/master/rpc.proto) from this repository to your project
 
-2. make config.json from example
+2. make "config.json" from [example(bitcoin)](https://github.com/gaiax/oreki/blob/master/example/config.json) or [example(ethereum)](https://github.com/gaiax/oreki/blob/master/example/ethereum-config.json)
 
 3. import oreki module
 
