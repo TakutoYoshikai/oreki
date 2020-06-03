@@ -29,12 +29,12 @@ zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
 ```
 
-## Run bitcoind
+## Start bitcoind
 ```
 bitcoind -datadir=/path/to/bitcoin
 ```
 
-## Run bitcoind as a daemon process
+## Start bitcoind as a daemon process
 ```
 bitcoind -datadir=/path/to/bitcoin -daemon
 ```
@@ -80,12 +80,12 @@ alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/cha
 ```
 alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/mainnet/admin.macaroon"
 ```
-## Run LND
+## Start LND
 ```
 ./run-lnd.sh
 ```
 
-## Run LND in background
+## Start LND in background
 ```
 nohup ./run-lnd.sh &
 ```
