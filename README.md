@@ -39,7 +39,11 @@ This solution is to trust other server. It's easy, but you don't get real benefi
 
 # Quick Start
 
+### create your LND Wallet
+check [here](#To-check)
+
 ### prepare to use oreki
+
 **1. install oreki-node to your project**
 ```
 npm install oreki-node
