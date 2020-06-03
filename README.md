@@ -31,7 +31,7 @@ If you want to use ethereum, read [here](https://github.com/gaiax/oreki/blob/mas
 ### 2. btcd or bitcoind or neutrino(case of bitcoin)
 If you want to build bitcoin fullnode, use **btcd**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/btcd.md).
 
-If you want to save storage, use **bitcoind**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/bitcoind.md).
+If you want to use **bitcoind**, read [here](https://github.com/gaiax/oreki/blob/master/docs/bitcoind.md).
 
 If you don't want to build bitcoin node, use **neutrino mode of lnd**, and read [here](https://github.com/gaiax/oreki/blob/master/docs/neutrino.md).
 This solution is to trust other server. It's easy, but you don't get real benefit of blockchain.
