@@ -52,18 +52,18 @@ mkdir data
 mkdir logs
 ```
 
-2. create a shell script for running lnd
+2. create a shell script for starting lnd
 ```
-vim run-lnd.sh
-chmod +x run-lnd.sh
+vim start-lnd.sh
+chmod +x start-lnd.sh
 ```
 
-this is an example of run-lnd.sh on testnet (for test)
+this is an example of start-lnd.sh on testnet (for test)
 ```
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.testnet --bitcoin.active
 ```
 
-this is an example of run-lnd.sh on mainnet(for production)
+this is an example of start-lnd.sh on mainnet(for production)
 
 ```
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/logs --debuglevel=info --bitcoin.node=bitcoind --bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332 --bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333 --bitcoind.rpcuser=alice --bitcoind.rpcpass=alicepassword --bitcoin.mainnet
@@ -82,12 +82,12 @@ alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/cha
 ```
 ## Start LND
 ```
-./run-lnd.sh
+./start-lnd.sh
 ```
 
 ## Start LND in background
 ```
-nohup ./run-lnd.sh &
+nohup ./start-lnd.sh &
 ```
 ### Stop LND process in background
 ```
