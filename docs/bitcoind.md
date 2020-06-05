@@ -101,3 +101,8 @@ mylncli stop
 mylncli create
 ```
 
+### When move coin from LND to your bitcoin wallet
+```
+mylncli unlock
+mylncli sendcoins --addr <your bitcoin address> --amt <amount satoshi> --conf_target 19
+```
