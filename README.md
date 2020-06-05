@@ -2,6 +2,8 @@
 
 original endpoint sales kit
 
+oreki is a package for sale API that you developed.
+
 ## Prerequisites
 OS: Amazon Linux2
 Storage: about 500GB
