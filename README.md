@@ -3,6 +3,7 @@
 original endpoint sales kit
 
 oreki is a package for sale API that you developed.
+You can choose bitcoin or ethereum.
 
 ## Prerequisites
 OS: Amazon Linux2
