@@ -71,13 +71,6 @@ npm install oreki-node
 
 **8. call start function to check transactions**
 
-## When move coin from LND to your bitcoin wallet
-
-```bash
-mylncli unlock
-mylncli sendcoins --addr <your bitcoin address> --amt <amount satoshi> --conf_target 19
-```
-
 ## 📚 Documentation
 
 ### import
