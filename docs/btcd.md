@@ -28,3 +28,56 @@ You can know blockchain sync finished by checking log and comparing to [latest b
 ```
 nohup ./start-btcd.sh &
 ```
+
+## Setup LND
+1. create lnd directory
+```
+mkdir lnd
+cd lnd
+mkdir data
+mkdir logs
+```
+
+2. create a shell script for starting lnd
+```
+vim start-lnd.sh
+chmod +x start-lnd.sh
+```
+
+this is an example of start-lnd.sh on testnet (for test)
+```
+lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/log --debuglevel=info --bitcoin.node=btcd --bitcoin.active --btcd.rpcuser=alice --btcd.rpcpass=alice01 --bitcoin.testnet
+```
+
+3. register alias of lncli in .bash_profile
+
+* for test
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/testnet/admin.macaroon"
+```
+
+* for production
+```
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/mainnet/admin.macaroon"
+```
+## Start LND
+```
+./start-lnd.sh
+```
+
+## Start LND in background
+```
+nohup ./start-lnd.sh &
+```
+### Stop LND process in background
+```
+mylncli stop
+```
+
+### Create your Lightning Network Wallet
+```
+mylncli create
+```
+
+
+
