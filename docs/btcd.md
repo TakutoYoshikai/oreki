@@ -36,7 +36,7 @@ btcctl --testnet -u alice -P alice01 stop
 ```
 
 ## Setup LND
-1. create lnd directory
+**1. create lnd directory**
 ```bash
 mkdir lnd
 cd lnd
@@ -44,7 +44,7 @@ mkdir data
 mkdir logs
 ```
 
-2. create a shell script for starting lnd
+**2. create a shell script for starting lnd**
 ```bash
 vim start-lnd.sh
 chmod +x start-lnd.sh
@@ -55,7 +55,7 @@ this is an example of start-lnd.sh on testnet (for test)
 lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:8001 --datadir=/path/to/lnd/data --logdir=/path/to/lnd/log --debuglevel=info --bitcoin.node=btcd --bitcoin.active --btcd.rpcuser=alice --btcd.rpcpass=alice01 --bitcoin.testnet
 ```
 
-3. register alias of lncli in .bash_profile
+**3. register alias of lncli in .bash_profile**
 
 * for test
 ```bash
