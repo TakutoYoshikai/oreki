@@ -29,6 +29,12 @@ You can know blockchain sync finished by checking log and comparing to [latest b
 nohup ./start-btcd.sh &
 ```
 
+## Stop btcd
+for test
+```
+btcctl --testnet -u alice -P alice01 stop
+```
+
 ## Setup LND
 1. create lnd directory
 ```
