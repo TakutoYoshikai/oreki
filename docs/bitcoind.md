@@ -45,7 +45,7 @@ bitcoind -datadir=/path/to/bitcoin
 bitcoind -datadir=/path/to/bitcoin -daemon
 ```
 
-## Stop bitcoind
+## When you want to stop bitcoind
 ```bash
 mybitcoin-cli stop
 ```
@@ -95,7 +95,7 @@ alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/cha
 ```bash
 nohup ./start-lnd.sh &
 ```
-### Stop LND process in background
+### When you want to stop LND process in background
 ```bash
 mylncli stop
 ```
