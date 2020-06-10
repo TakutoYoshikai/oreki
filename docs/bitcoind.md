@@ -45,7 +45,7 @@ bitcoind -datadir=/path/to/bitcoin
 bitcoind -datadir=/path/to/bitcoin -daemon
 ```
 
-## Check bitcoind info
+## Check bitcoind info(when you check blockchain height)
 ```
 mybitcoin-cli -getinfo
 ```
