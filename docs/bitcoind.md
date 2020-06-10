@@ -45,6 +45,11 @@ bitcoind -datadir=/path/to/bitcoin
 bitcoind -datadir=/path/to/bitcoin -daemon
 ```
 
+## Check bitcoind info
+```
+mybitcoin-cli -getinfo
+```
+
 ## When you want to stop bitcoind
 ```bash
 mybitcoin-cli stop
