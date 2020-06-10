@@ -34,5 +34,5 @@ You can know blockchain sync finished by checking log and comparing to [latest b
 nohup ./start-geth.sh &
 ```
 
-## Stop Ethereum in background
+## When you want to stop Ethereum in background
 Find process pid and kill it.
