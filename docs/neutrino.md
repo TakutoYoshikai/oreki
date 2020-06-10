@@ -47,17 +47,17 @@ alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/cha
 nohup ./start-lnd.sh &
 ```
 
-### Stop LND process in background
+## When you want to stop LND process in background
 ```bash
 mylncli stop
 ```
 
-### Create your Lightning Network Wallet
+## Create your Lightning Network Wallet
 ```bash
 mylncli create
 ```
 
-### When move coin from LND to your bitcoin wallet
+### When you want to move coin from LND to your bitcoin wallet
 ```bash
 mylncli unlock
 mylncli sendcoins --addr <your bitcoin address> --amt <amount satoshi> --conf_target 19
