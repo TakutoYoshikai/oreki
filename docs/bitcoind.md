@@ -28,7 +28,11 @@ rpcpassword=alicepassword <- Change HERE
 zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
 ```
-
+## Register alias in ~/.bash_profile
+insert this to .bash_profile
+```
+alias mybitcoin-cli="bitcoin-cli -rpcport=18332 -rpcuser=alice -rpcpassword=alicepassword"
+```
 ## Start bitcoind
 First start of bitcoind have to wait sync of blockchain.
 You can know blockchain sync finished by checking log and comparing to [latest block height](https://live.blockcypher.com/btc/)
@@ -43,7 +47,7 @@ bitcoind -datadir=/path/to/bitcoin -daemon
 
 ## Stop bitcoind
 ```bash
-bitcoin-cli stop
+mybitcoin-cli stop
 ```
 ## Setup LND
 **1. create lnd directory**
