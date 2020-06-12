@@ -14,13 +14,13 @@ chmod +x start-geth.sh
 this is an example of start-geth.sh on testnet (for test)
 ```bash
 #!/bin/bash
-geth --testnet --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock
+geth --testnet --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock --syncmode=fast
 ```
 
 this is an example of start-geth.sh on mainnet (for production)
 ```bash
 #!/bin/bash
-geth --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock
+geth --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock --syncmode=fast
 ```
 
 ## Start Ethereum
@@ -36,3 +36,8 @@ nohup ./start-geth.sh &
 
 ## When you want to stop Ethereum in background
 Find process pid and kill it.
+example
+```
+ps aux | grep geth
+kill -INT <pid>
+```
