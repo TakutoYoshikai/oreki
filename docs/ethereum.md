@@ -23,9 +23,9 @@ this is an example of start-geth.sh on mainnet (for production)
 geth --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock --syncmode fast
 ```
 
+**3. open 30303 port to the world**
+
 ## Start Ethereum
-First start of geth have to wait sync of blockchain.
-You can know blockchain sync finished by checking log and comparing to [latest block number](https://etherscan.io/blocks)
 ```bash
 ./start-geth.sh
 ```
@@ -34,6 +34,17 @@ You can know blockchain sync finished by checking log and comparing to [latest b
 nohup ./start-geth.sh &
 ```
 
+## When you check geth syncing
+open console of geth
+```bash
+cd /path/to/ethereum
+geth attach geth.ipc
+```
+enter this on the console
+```
+eth.syncing
+```
+if this response is false, sync is completed.
 ## When you want to stop Ethereum in background
 Find process pid and kill it.
 example
