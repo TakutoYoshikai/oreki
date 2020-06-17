@@ -96,6 +96,10 @@ oreki.init().then(function(success) {
 oreki.on("paid", function(payment) {
   //increment api point from payment.point and payment.user_id and payment.endpoint_id
 })
+
+oreki.on("insufficient", function(payment) {
+  // when the payment is insufficient
+})
 ```
 
 ### start
