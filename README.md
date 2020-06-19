@@ -112,7 +112,7 @@ oreki.start()
 
 ```javascript
 oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoin amount: int>).then(function(payment) {
-  //payment.address: bitcoin address
+  //payment.address: bitcoin or ethereum address
 })
 //oreki.addPayment("user_id", "endpoint_id", 100, 1000)
 ```
