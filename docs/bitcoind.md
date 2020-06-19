@@ -84,12 +84,12 @@ lnd --rpclisten=localhost:10001 --listen=localhost:10011 --restlisten=localhost:
 
 * for test
 ```bash
-alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/testnet/admin.macaroon"
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/data/chain/bitcoin/testnet/admin.macaroon"
 ```
 
 * for production
 ```bash
-alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/chain/bitcoin/mainnet/admin.macaroon"
+alias mylncli="lncli --rpcserver=localhost:10001 --macaroonpath=/path/to/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
 ```
 ## Start LND
 ```bash
