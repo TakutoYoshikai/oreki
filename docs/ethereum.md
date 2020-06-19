@@ -14,7 +14,7 @@ chmod +x start-geth.sh
 this is an example of start-geth.sh on testnet (for test)
 ```bash
 #!/bin/bash
-geth --testnet --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock --syncmode fast
+geth --ropsten --datadir /path/to/ethereum/ --syncmode fast --ws --ws.addr=127.0.0.1 --ws.port 8546 --ws.api web3,eth,net,personal --http.api personal,net,eth,web3 --allow-insecure-unlock
 ```
 
 this is an example of start-geth.sh on mainnet (for production)
