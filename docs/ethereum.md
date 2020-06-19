@@ -20,7 +20,7 @@ geth --ropsten --datadir /path/to/ethereum/ --syncmode fast --ws --ws.addr=127.0
 this is an example of start-geth.sh on mainnet (for production)
 ```bash
 #!/bin/bash
-geth --ws --wsaddr=127.0.0.1 --wsport 8546 --datadir /path/to/ethereum/ --wsapi web3,eth,net,personal --rpcapi personal,net,eth,web3 --allow-insecure-unlock --syncmode fast
+geth --ws --ws.addr=127.0.0.1 --ws.port 8546 --ws.api web3,eth,net,personal --datadir /path/to/ethereum/ --http.api personal,net,eth,web3 --allow-insecure-unlock --syncmode fast
 ```
 
 **3. open 30303 port to the world**
