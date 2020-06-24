@@ -52,3 +52,23 @@ example
 ps aux | grep geth
 kill -INT <pid>
 ```
+
+## When you want to move all coins to any address
+open geth console, and run this code.
+```
+function moveCoin(to, password) {
+	for (var i = 0; i < eth.accounts.length; i++) {
+		var from = eth.accounts[i];
+		personal.unlock(from, password);
+		eth.sendTransaction({
+			from:from,
+      to:to,
+			value:eth.getBalance(from)-21000*eth.gasPrice-1,
+			gas:21000,
+			gasPrice:eth.gasPrice
+		});
+		
+	}
+}
+moveCoin("<destination address>", "<password>");
+```
