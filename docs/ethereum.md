@@ -59,7 +59,7 @@ open geth console, and run this code.
 function moveCoin(to, password) {
 	for (var i = 0; i < eth.accounts.length; i++) {
 		var from = eth.accounts[i];
-		personal.unlock(from, password);
+		personal.unlockAccount(from, password);
 		eth.sendTransaction({
 			from:from,
       to:to,
