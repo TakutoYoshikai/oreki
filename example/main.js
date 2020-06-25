@@ -30,7 +30,7 @@ app.listen(3000, function() {
   })
   oreki.start()
   let payment = await oreki.addPayment("user", "endpoint", 5, 1000)
-  console.log("address: ", payment.address)
+  console.log("payee: ", payment.payee)
 })()
 
 

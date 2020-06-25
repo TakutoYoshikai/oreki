@@ -99,6 +99,7 @@ oreki.on("paid", function(payment) {
 
 oreki.on("insufficient", function(payment) {
   // when the payment is insufficient
+  // ethereum only
 })
 ```
 
@@ -112,7 +113,7 @@ oreki.start()
 
 ```javascript
 oreki.addPayment(<user_id: string>, <endpoint_id: string>, <point: int>, <bitcoin amount: int>).then(function(payment) {
-  //payment.address: bitcoin or ethereum address
+  //payment.payee: bitcoin invoice or ethereum address
 })
 //oreki.addPayment("user_id", "endpoint_id", 100, 1000)
 ```
