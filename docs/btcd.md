@@ -17,6 +17,12 @@ this is an example of start-btcd.sh on testnet(for test)
 btcd --testnet --txindex --rpcuser=alice --rpcpass=alice01 --datadir=/path/to/btcd/data
 ```
 
+this is an example of start-btcd.sh on mainnet(for production)
+```bash
+#!/bin/bash
+btcd --txindex --rpcuser=alice --rpcpass=alice01 --datadir=/path/to/btcd/data
+```
+
 ## Start btcd
 First start of btcd have to wait sync of blockchain.
 You can know blockchain sync finished by checking log and comparing to [latest block height](https://live.blockcypher.com/btc/) or [latest block height of testnet(for test)](https://live.blockcypher.com/btc-testnet/)
