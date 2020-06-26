@@ -60,10 +60,14 @@ function moveCoin(to, password) {
 	for (var i = 0; i < eth.accounts.length; i++) {
 		var from = eth.accounts[i];
 		personal.unlock(from, password);
+		var value = eth.getBalance(from)-21000*eth.gasPrice-1;
+		if (value < 0) {
+			continue;
+		}
 		eth.sendTransaction({
 			from:from,
       to:to,
-			value:eth.getBalance(from)-21000*eth.gasPrice-1,
+			value:value,
 			gas:21000,
 			gasPrice:eth.gasPrice
 		});
