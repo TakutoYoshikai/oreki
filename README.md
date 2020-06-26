@@ -49,6 +49,8 @@ This solution is to trust other server. It's easy, but you don't get real benefi
 
 check [here](#To-check)
 
+### publish your public key of lnd
+
 ### prepare to use oreki
 
 **1. install oreki-node to your project**
@@ -70,6 +72,17 @@ npm install oreki-node
 **7. register payment reservation**
 
 **8. call start function to check transactions**
+
+### When customer buy API access authority
+1. Call addPayment function, and let customer know invoice decoded
+
+2. Customer connects to your lnd node using your public key
+
+3. Customer opens payment channel
+
+4. Customer pays to you by invoice
+
+5. Customer closes payment channel
 
 ## 📚 Documentation
 
